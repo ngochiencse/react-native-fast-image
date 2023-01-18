@@ -157,7 +157,7 @@
         SDWebImageContext *context = @{SDWebImageContextDownloadRequestModifier : requestModifier};
         
         // Set priority.
-        SDWebImageOptions options = SDWebImageRetryFailed | SDWebImageHandleCookies;
+        SDWebImageOptions options = SDWebImageRetryFailed | SDWebImageHandleCookies | SDWebImageScaleDownLargeImages;
         switch (_source.priority) {
             case FFFPriorityLow:
                 options |= SDWebImageLowPriority;
